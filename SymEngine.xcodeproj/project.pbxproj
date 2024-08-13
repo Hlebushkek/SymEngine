@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC25A2022C6B3BCD00075DE6 /* libsymengine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25A2012C6B3BCD00075DE6 /* libsymengine.a */; platformFilters = (macos, ); };
+		BC25A2042C6B3BE300075DE6 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25A2032C6B3BE300075DE6 /* libgmp.a */; platformFilters = (macos, ); };
+		BC25A2062C6B3D2800075DE6 /* libsymengine_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25A2052C6B3D2800075DE6 /* libsymengine_iOS.a */; platformFilter = ios; };
+		BC25A2082C6B3D3D00075DE6 /* libgmp_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25A2072C6B3D3D00075DE6 /* libgmp_iOS.a */; platformFilter = ios; };
+		BCEAFB442C6B0126008E3353 /* SymEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEAFB3B2C6B0125008E3353 /* SymEngine.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCEAFB452C6B0126008E3353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCEAFB322C6B0125008E3353 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCEAFB3A2C6B0125008E3353;
+			remoteInfo = SymEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC25A2012C6B3BCD00075DE6 /* libsymengine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsymengine.a; path = ../../symengine/macos/libsymengine.a; sourceTree = "<group>"; };
+		BC25A2032C6B3BE300075DE6 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp.a; path = "../../../Downloads/gmp-6.3.0/libs_combined/libgmp.a"; sourceTree = "<group>"; };
+		BC25A2052C6B3D2800075DE6 /* libsymengine_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsymengine_iOS.a; path = "../../symengine/ios-arm64/symengine/libsymengine_iOS.a"; sourceTree = "<group>"; };
+		BC25A2072C6B3D3D00075DE6 /* libgmp_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp_iOS.a; path = "../../../Downloads/gmp-6.3.0/libs_ios_arm64/libgmp_iOS.a"; sourceTree = "<group>"; };
+		BCEAFB3B2C6B0125008E3353 /* SymEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SymEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEAFB432C6B0126008E3353 /* SymEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BCEAFB4B2C6B0126008E3353 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				ExpressionSolver.hpp,
+				SymEngine.h,
+			);
+			target = BCEAFB3A2C6B0125008E3353 /* SymEngine */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BCEAFB3D2C6B0125008E3353 /* SymEngine */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BCEAFB4B2C6B0126008E3353 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = SymEngine; sourceTree = "<group>"; };
+		BCEAFB472C6B0126008E3353 /* SymEngineTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SymEngineTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCEAFB382C6B0125008E3353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC25A2082C6B3D3D00075DE6 /* libgmp_iOS.a in Frameworks */,
+				BC25A2062C6B3D2800075DE6 /* libsymengine_iOS.a in Frameworks */,
+				BC25A2042C6B3BE300075DE6 /* libgmp.a in Frameworks */,
+				BC25A2022C6B3BCD00075DE6 /* libsymengine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEAFB402C6B0126008E3353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEAFB442C6B0126008E3353 /* SymEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCEAFB312C6B0125008E3353 = {
+			isa = PBXGroup;
+			children = (
+				BCEAFB3D2C6B0125008E3353 /* SymEngine */,
+				BCEAFB472C6B0126008E3353 /* SymEngineTests */,
+				BCEAFB3C2C6B0125008E3353 /* Products */,
+				BCEAFB5F2C6B0576008E3353 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCEAFB3C2C6B0125008E3353 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCEAFB3B2C6B0125008E3353 /* SymEngine.framework */,
+				BCEAFB432C6B0126008E3353 /* SymEngineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCEAFB5F2C6B0576008E3353 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC25A2072C6B3D3D00075DE6 /* libgmp_iOS.a */,
+				BC25A2052C6B3D2800075DE6 /* libsymengine_iOS.a */,
+				BC25A2032C6B3BE300075DE6 /* libgmp.a */,
+				BC25A2012C6B3BCD00075DE6 /* libsymengine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BCEAFB362C6B0125008E3353 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BCEAFB3A2C6B0125008E3353 /* SymEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEAFB4C2C6B0126008E3353 /* Build configuration list for PBXNativeTarget "SymEngine" */;
+			buildPhases = (
+				BCEAFB362C6B0125008E3353 /* Headers */,
+				BCEAFB372C6B0125008E3353 /* Sources */,
+				BCEAFB382C6B0125008E3353 /* Frameworks */,
+				BCEAFB392C6B0125008E3353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BCEAFB3D2C6B0125008E3353 /* SymEngine */,
+			);
+			name = SymEngine;
+			packageProductDependencies = (
+			);
+			productName = SymEngine;
+			productReference = BCEAFB3B2C6B0125008E3353 /* SymEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BCEAFB422C6B0126008E3353 /* SymEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCEAFB512C6B0126008E3353 /* Build configuration list for PBXNativeTarget "SymEngineTests" */;
+			buildPhases = (
+				BCEAFB3F2C6B0126008E3353 /* Sources */,
+				BCEAFB402C6B0126008E3353 /* Frameworks */,
+				BCEAFB412C6B0126008E3353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCEAFB462C6B0126008E3353 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BCEAFB472C6B0126008E3353 /* SymEngineTests */,
+			);
+			name = SymEngineTests;
+			packageProductDependencies = (
+			);
+			productName = SymEngineTests;
+			productReference = BCEAFB432C6B0126008E3353 /* SymEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCEAFB322C6B0125008E3353 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					BCEAFB3A2C6B0125008E3353 = {
+						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
+					};
+					BCEAFB422C6B0126008E3353 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = BCEAFB352C6B0125008E3353 /* Build configuration list for PBXProject "SymEngine" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCEAFB312C6B0125008E3353;
+			productRefGroup = BCEAFB3C2C6B0125008E3353 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCEAFB3A2C6B0125008E3353 /* SymEngine */,
+				BCEAFB422C6B0126008E3353 /* SymEngineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCEAFB392C6B0125008E3353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEAFB412C6B0126008E3353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCEAFB372C6B0125008E3353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCEAFB3F2C6B0126008E3353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCEAFB462C6B0126008E3353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCEAFB3A2C6B0125008E3353 /* SymEngine */;
+			targetProxy = BCEAFB452C6B0126008E3353 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BCEAFB4D2C6B0126008E3353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 38M6285G4U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/gmp/6.3.0/include/,
+					/Users/glebsobolevsky/Documents/symengine/,
+					"/Users/glebsobolevsky/Documents/symengine/ios-arm64/",
+					"/Users/glebsobolevsky/Documents/symengine/macos-x86_64/",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/glebsobolevsky/Documents/symengine/macos/,
+					"/Users/glebsobolevsky/Downloads/gmp-6.3.0/libs_combined",
+					"/Users/glebsobolevsky/Documents/symengine/ios-arm64/symengine/",
+					"/Users/glebsobolevsky/Downloads/gmp-6.3.0/libs_ios_arm64",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = hlebushek.SymEngine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		BCEAFB4E2C6B0126008E3353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 38M6285G4U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/gmp/6.3.0/include/,
+					/Users/glebsobolevsky/Documents/symengine/,
+					"/Users/glebsobolevsky/Documents/symengine/ios-arm64/",
+					"/Users/glebsobolevsky/Documents/symengine/macos-x86_64/",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/glebsobolevsky/Documents/symengine/macos/,
+					"/Users/glebsobolevsky/Downloads/gmp-6.3.0/libs_combined",
+					"/Users/glebsobolevsky/Documents/symengine/ios-arm64/symengine/",
+					"/Users/glebsobolevsky/Downloads/gmp-6.3.0/libs_ios_arm64",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = hlebushek.SymEngine;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		BCEAFB4F2C6B0126008E3353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCEAFB502C6B0126008E3353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BCEAFB522C6B0126008E3353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38M6285G4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
+				PRODUCT_BUNDLE_IDENTIFIER = hlebushek.SymEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		BCEAFB532C6B0126008E3353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38M6285G4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
+				PRODUCT_BUNDLE_IDENTIFIER = hlebushek.SymEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCEAFB352C6B0125008E3353 /* Build configuration list for PBXProject "SymEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEAFB4F2C6B0126008E3353 /* Debug */,
+				BCEAFB502C6B0126008E3353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCEAFB4C2C6B0126008E3353 /* Build configuration list for PBXNativeTarget "SymEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEAFB4D2C6B0126008E3353 /* Debug */,
+				BCEAFB4E2C6B0126008E3353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCEAFB512C6B0126008E3353 /* Build configuration list for PBXNativeTarget "SymEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCEAFB522C6B0126008E3353 /* Debug */,
+				BCEAFB532C6B0126008E3353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCEAFB322C6B0125008E3353 /* Project object */;
+}
