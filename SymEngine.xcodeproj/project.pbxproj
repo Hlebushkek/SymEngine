@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC25A2022C6B3BCD00075DE6 /* libsymengine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25A2012C6B3BCD00075DE6 /* libsymengine.a */; platformFilters = (macos, ); };
-		BC25A2042C6B3BE300075DE6 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25A2032C6B3BE300075DE6 /* libgmp.a */; platformFilters = (macos, ); };
-		BC25A2062C6B3D2800075DE6 /* libsymengine_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25A2052C6B3D2800075DE6 /* libsymengine_iOS.a */; platformFilter = ios; };
-		BC25A2082C6B3D3D00075DE6 /* libgmp_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25A2072C6B3D3D00075DE6 /* libgmp_iOS.a */; platformFilter = ios; };
+		BC25A2322C6C28C900075DE6 /* libsymengine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25A22E2C6C28C900075DE6 /* libsymengine.a */; platformFilter = ios; };
+		BC25A2332C6C28C900075DE6 /* libsymengine_macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25A22F2C6C28C900075DE6 /* libsymengine_macOS.a */; platformFilters = (macos, ); };
+		BC25A2342C6C28C900075DE6 /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25A2302C6C28C900075DE6 /* libgmp.a */; platformFilter = ios; };
+		BC96DC722C6C503100A1EE2F /* libgmp_macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25A22D2C6C28C900075DE6 /* libgmp_macOS.a */; platformFilters = (macos, ); };
 		BCEAFB442C6B0126008E3353 /* SymEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEAFB3B2C6B0125008E3353 /* SymEngine.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +25,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BC25A2012C6B3BCD00075DE6 /* libsymengine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsymengine.a; path = ../../symengine/macos/libsymengine.a; sourceTree = "<group>"; };
-		BC25A2032C6B3BE300075DE6 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp.a; path = "../../../Downloads/gmp-6.3.0/libs_combined/libgmp.a"; sourceTree = "<group>"; };
-		BC25A2052C6B3D2800075DE6 /* libsymengine_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsymengine_iOS.a; path = "../../symengine/ios-arm64/symengine/libsymengine_iOS.a"; sourceTree = "<group>"; };
-		BC25A2072C6B3D3D00075DE6 /* libgmp_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp_iOS.a; path = "../../../Downloads/gmp-6.3.0/libs_ios_arm64/libgmp_iOS.a"; sourceTree = "<group>"; };
+		BC25A22D2C6C28C900075DE6 /* libgmp_macOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp_macOS.a; path = libs/libgmp_macOS.a; sourceTree = "<group>"; };
+		BC25A22E2C6C28C900075DE6 /* libsymengine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsymengine.a; path = libs/libsymengine.a; sourceTree = "<group>"; };
+		BC25A22F2C6C28C900075DE6 /* libsymengine_macOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsymengine_macOS.a; path = libs/libsymengine_macOS.a; sourceTree = "<group>"; };
+		BC25A2302C6C28C900075DE6 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp.a; path = libs/libgmp.a; sourceTree = "<group>"; };
 		BCEAFB3B2C6B0125008E3353 /* SymEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SymEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEAFB432C6B0126008E3353 /* SymEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -54,10 +54,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC25A2082C6B3D3D00075DE6 /* libgmp_iOS.a in Frameworks */,
-				BC25A2062C6B3D2800075DE6 /* libsymengine_iOS.a in Frameworks */,
-				BC25A2042C6B3BE300075DE6 /* libgmp.a in Frameworks */,
-				BC25A2022C6B3BCD00075DE6 /* libsymengine.a in Frameworks */,
+				BC25A2342C6C28C900075DE6 /* libgmp.a in Frameworks */,
+				BC96DC722C6C503100A1EE2F /* libgmp_macOS.a in Frameworks */,
+				BC25A2322C6C28C900075DE6 /* libsymengine.a in Frameworks */,
+				BC25A2332C6C28C900075DE6 /* libsymengine_macOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +72,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC25A22C2C6C28C900075DE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC25A2302C6C28C900075DE6 /* libgmp.a */,
+				BC25A22D2C6C28C900075DE6 /* libgmp_macOS.a */,
+				BC25A22E2C6C28C900075DE6 /* libsymengine.a */,
+				BC25A22F2C6C28C900075DE6 /* libsymengine_macOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BCEAFB312C6B0125008E3353 = {
 			isa = PBXGroup;
 			children = (
 				BCEAFB3D2C6B0125008E3353 /* SymEngine */,
 				BCEAFB472C6B0126008E3353 /* SymEngineTests */,
 				BCEAFB3C2C6B0125008E3353 /* Products */,
-				BCEAFB5F2C6B0576008E3353 /* Frameworks */,
+				BC25A22C2C6C28C900075DE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,17 +100,6 @@
 				BCEAFB432C6B0126008E3353 /* SymEngineTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BCEAFB5F2C6B0576008E3353 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BC25A2072C6B3D3D00075DE6 /* libgmp_iOS.a */,
-				BC25A2052C6B3D2800075DE6 /* libsymengine_iOS.a */,
-				BC25A2032C6B3BE300075DE6 /* libgmp.a */,
-				BC25A2012C6B3BCD00075DE6 /* libsymengine.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +259,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/gmp/6.3.0/include/,
-					/Users/glebsobolevsky/Documents/symengine/,
-					"/Users/glebsobolevsky/Documents/symengine/ios-arm64/",
-					"/Users/glebsobolevsky/Documents/symengine/macos-x86_64/",
+					"$(PROJECT_DIR)/External/symengine/",
+					"$(PROJECT_DIR)/External/symengine/build_iOS_arm64/",
+					"$(PROJECT_DIR)/External/symengine/build_macOS_x86_64/",
 				);
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -274,12 +274,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					/Users/glebsobolevsky/Documents/symengine/macos/,
-					"/Users/glebsobolevsky/Downloads/gmp-6.3.0/libs_combined",
-					"/Users/glebsobolevsky/Documents/symengine/ios-arm64/symengine/",
-					"/Users/glebsobolevsky/Downloads/gmp-6.3.0/libs_ios_arm64",
-				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/libs";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
@@ -316,9 +311,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/gmp/6.3.0/include/,
-					/Users/glebsobolevsky/Documents/symengine/,
-					"/Users/glebsobolevsky/Documents/symengine/ios-arm64/",
-					"/Users/glebsobolevsky/Documents/symengine/macos-x86_64/",
+					"$(PROJECT_DIR)/External/symengine/",
+					"$(PROJECT_DIR)/External/symengine/build_iOS_arm64/",
+					"$(PROJECT_DIR)/External/symengine/build_macOS_x86_64/",
 				);
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -331,12 +326,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					/Users/glebsobolevsky/Documents/symengine/macos/,
-					"/Users/glebsobolevsky/Downloads/gmp-6.3.0/libs_combined",
-					"/Users/glebsobolevsky/Documents/symengine/ios-arm64/symengine/",
-					"/Users/glebsobolevsky/Downloads/gmp-6.3.0/libs_ios_arm64",
-				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/libs";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c++";
