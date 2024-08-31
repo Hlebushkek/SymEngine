@@ -7,7 +7,13 @@
 
 #pragma once
 
+#include <vector>
+#include <string>
+
 class ExpressionSolver {
 public:
     ExpressionSolver();
+    
+    std::string evaluate(const std::string &exp_str) const;
+    std::vector<std::string> solve(const std::string &exp_str, const std::string &sym_str) const;
 };

@@ -11,7 +11,7 @@ import Testing
 struct SymEngineTests {
 
     @Test func example() async throws {
-        let solver = ExpressionSolverWrapper()
+        let solver = ExpressionSolver()
     }
 
 }

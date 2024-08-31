@@ -261,7 +261,7 @@
 					/usr/local/Cellar/gmp/6.3.0/include/,
 					"$(PROJECT_DIR)/External/symengine/",
 					"$(PROJECT_DIR)/External/symengine/build_iOS_arm64/",
-					"$(PROJECT_DIR)/External/symengine/build_macOS_x86_64/",
+					"$(PROJECT_DIR)/External/symengine/build_macOS_combined/",
 				);
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -313,7 +313,7 @@
 					/usr/local/Cellar/gmp/6.3.0/include/,
 					"$(PROJECT_DIR)/External/symengine/",
 					"$(PROJECT_DIR)/External/symengine/build_iOS_arm64/",
-					"$(PROJECT_DIR)/External/symengine/build_macOS_x86_64/",
+					"$(PROJECT_DIR)/External/symengine/build_macOS_combined/",
 				);
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
